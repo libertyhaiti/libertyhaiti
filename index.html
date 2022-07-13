@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
-    mipagina
-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-<p>
+    
+    <h1 id="para1" class="text-center py-10 text-2xl font-semibold ">Welcome, Student!</h1>
+       <form autocomplete="off" onSubmit="onFormSubmit()" class="form-horizontal flex place-content-center ">
+        <div class="py-10 relative gap-4 >
+       <label class="py-5">First Name:</label><br>
+       <input id="firstName" type="text" name="first_name" class="bg-slate-100 px-20 py-3 rounded-full"  placeholder="Enter Your First Name" required></input>
+       <div><br>
+       <label  class="py-5">Last Name:</label><br>
+       <input id="lastName" type="text" class="bg-slate-100 px-20 py-3 rounded-full"  placeholder="Enter Your Last Name" required></input>
+       </div>
+       <div><br>
+        <label class="py-5">ID:</label><br>
+        <input id="idstudent" type="text" class="bg-slate-100 px-20 py-3 rounded-full" placeholder="Enter Your ID" required></input>
+        </div>
+        <div><br>
+            <label class="py-5">Score:</label><br>
+            <input id="scorestudent" type="text" class="bg-slate-100 px-20 py-3 rounded-full" placeholder="Enter Your Score" required></input>
+            </div>
+            <br>
+        <button onclick ="myStudent()" id = "btn" class="focus:outline-none focus-visible:ring ... bg-blue-500 hover:bg-blue-600 active:bg-blue-700 px-9 py-3 rounded-full active:bg-blue-600 text-white " >Save Student</button>
+        <button onclick="onUpdate()" class="focus:outline-none focus-visible:ring ... bg-blue-500 hover:bg-blue-600 active:bg-blue-700 px-9 py-3 rounded-full active:bg-blue-600 text-white" >Update Student</button>
+        </div>
+      </form>
 
-<a href="http://google.com">Google</a>
-<a href="http://yahoo.com">Yahoo</a>
-<a href="http://hotmail.com">hotmail</a>
-
-</p>
-    <!--lista desordenada-->
-    <li>Harisson Marcus Rhau</li>
-    <li>809-993-5377</li>
-    <li>Ciudad Real II</li>
-    <li>harissonrhau@gmail.com</li>
-
-    <!--Local Image-->
-
-       <img src="images/hassan.jpg" width="200">
-
-       <!--parrafo-->
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipiscing elit senectus erat risus morbi, nibh integer dui non. Nec torquent leo condimentum fermentum nunc tortor aenean, eget est a orci ante sociosqu.
-    </p>
-
-      <!--parrafo-->
- <p>
-    Lorem ipsum dolor sit amet consectetur adipiscing elit dui ultrices, nostra platea enim ut bibendum malesuada metus semper laoreet senectus, quisque nec nam vivamus praesent ornare netus litora. Etiam justo egestas ullamcorper proin augue mus a accumsan dictumst viverra purus turpis, curabitur molestie in rutrum fringilla sollicitudin risus sapien phasellus vehicula nisl leo, congue tempor ac dis vel fames vulputate cum nascetur neque euismod. Cursus commodo natoque luctus auctor nulla hac felis pellentesque odio suspendisse, sociis at tristique vestibulum montes tellus condimentum id. Sociosqu curae placerat parturient aenean cras non mauris duis habitasse, erat penatibus potenti fusce taciti ridiculus quis imperdiet aliquam tempus, ante velit nisi lectus ad pulvinar morbi eleifend. Hendrerit scelerisque posuere vitae nunc conubia per magnis interdum, varius et orci libero integer nullam tortor lacinia, dictum est primis nibh class cubilia sem. Eros massa mollis urna feugiat donec, mattis eget arcu venenatis, tincidunt sed lobortis elementum. Gravida facilisis sodales sagittis porttitor eu dignissim blandit porta maecenas torquent fermentum inceptos magna, aptent aliquet lacus mi convallis habitant iaculis volutpat rhoncus faucibus facilisi quam. Pharetra himenaeos suscipit consequat pretium dapibus ligula ultricies diam, vestibulum vivamus vulputate posuere fames aliquet praesent nulla volutpat, ac vel fusce hendrerit iaculis leo sed.
-</p>
+<table id="myTable" class=" border-solid border-2 border-sky-500 table w-full place-content-center text-center border-separate border  bg-blue-100">
+    <thead>
+    <tr >
+      <th class=" ">First Name</th>
+      <th class="border-slate-600">Last Name</th>
+      <th class="border-slate-600">ID</th>
+      <th class="border-slate-600">Score</th>
+      <th class="border-slate-600">Action</th>
+     
+    </tr>
+    <tbody>
+ 
+    </tbody>
+</table>
 
 </body>
-<footer>
-    <p>Todos los derechos son reservados 2022</p>
-  </footer>
 </html>
